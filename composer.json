@@ -1,0 +1,36 @@
+{
+  "name": "vesperphp/build",
+  "type": "project",
+  "description": "A PHP framework for quick prototyping.",
+  "keywords": ["framework", "php", "prototype", "vesper"],
+  "license": "MIT",
+  
+   "authors": [
+      {
+          "name": "Rik Janssen",
+          "email": "rik@vesperphp.com"
+      }
+  ],
+  
+  "require": {
+    "vesperphp/framework": "0.*",
+    "scssphp/scssphp": "^1.11.0"
+  }
+  
+   "autoload": {
+    "classmap": [
+      "app/models", 
+      "app/controllers", 
+      "app/providers",
+      "app/providers/ware",
+      "vendor/vesperphp",
+      "vendor/cart-rd"
+    ]
+  },
+
+  "config": {
+    "optimize-autoloader": true,
+    "prefer-stable": true
+  }
+  
+}
