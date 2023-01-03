@@ -15,16 +15,11 @@
   "require": {
     "vesperphp/framework": "0.*",
     "scssphp/scssphp": "^1.11.0"
-  }
+  },
   
    "autoload": {
     "classmap": [
-      "app/models", 
-      "app/controllers", 
-      "app/providers",
-      "app/providers/ware",
-      "vendor/vesperphp",
-      "vendor/cart-rd"
+      "app/models"
     ]
   },
 
