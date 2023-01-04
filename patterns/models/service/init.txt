@@ -1,0 +1,1 @@
+{root}/vendor/vesperphp/framework/service | {namespace_upper}.php | {root}/patterns/models/service/class.txt

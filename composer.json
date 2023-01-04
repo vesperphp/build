@@ -13,13 +13,14 @@
   ],
   
   "require": {
-    "vesperphp/framework": "0.*",
+    "vesperphp/framework": "*",
     "scssphp/scssphp": "^1.11.0"
   },
   
    "autoload": {
     "classmap": [
-      "app/models"
+      "app",
+      "vendor/vesperphp"
     ]
   },
 

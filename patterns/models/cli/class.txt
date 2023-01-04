@@ -1,0 +1,19 @@
+<?php
+
+namespace Framework;
+
+/**
+ * This is a CLI
+ * command. {namespace}:(method)
+ */
+
+class {namespace_upper}{
+
+    public function myCommand(array $flags = []){
+
+        
+
+    }
+
+
+}

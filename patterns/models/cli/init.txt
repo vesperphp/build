@@ -1,0 +1,1 @@
+{root}/vendor/vesperphp/framework/providers/boot/classes/ | {namespace_upper}.php | {root}/patterns/models/cli/class.txt

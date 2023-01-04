@@ -1,0 +1,10 @@
+<?php
+
+namespace {namespace_upper};
+
+class {namespace_upper}{
+
+    
+
+}
+

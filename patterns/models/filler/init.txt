@@ -1,0 +1,1 @@
+{root}/patterns/filler | {namespace_upper}.php | {root}/patterns/models/filler/class.txt

@@ -1,0 +1,8 @@
+<?php 
+define("ROOTPATH",  dirname(__FILE__));
+
+use Framework\Vesper;
+
+require_once ROOTPATH."/init.php"; 
+
+Vesper::cli($argv);
