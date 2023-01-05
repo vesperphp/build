@@ -1,1 +1,1 @@
-{root}/patterns/sequel | {namespace_upper}.php | {root}/patterns/models/table/class.txt
+{root}/patterns/sequel | 50_{namespace_upper}.php | {root}/patterns/models/table/class.txt
