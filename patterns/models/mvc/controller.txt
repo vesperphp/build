@@ -2,7 +2,7 @@
 
 namespace App\{namespace_upper};
 
-class {namespace_upper}Controller extends {namespace_upper}Model{
+class {namespace_upper}Controller extends {namespace_upper}{
 
     
 

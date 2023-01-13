@@ -19,8 +19,8 @@
   
    "autoload": {
     "classmap": [
-      "app",
-      "vendor/vesperphp"
+      "app/",
+      "vendor/vesperphp/"
     ]
   },
 

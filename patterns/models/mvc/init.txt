@@ -1,4 +1,4 @@
 {root}/app/controllers | {namespace_upper}Controller.php | {root}/patterns/models/mvc/controller.txt
-{root}/app/models | {namespace_upper}Model.php | {root}/patterns/models/mvc/model.txt
+{root}/app/models | {namespace_upper}.php | {root}/patterns/models/mvc/model.txt
 {root}/resources/views/{namespace} 
 {root}/resources/views/{namespace} | {namespace_upper}.view.php | {root}/patterns/models/mvc/view.txt

@@ -2,23 +2,48 @@
 
 use Sequel\Tablier;
 
-$t = new Tablier('{namespace}');
+if($boot=="up"){
 
-$t->int('id')->primary();
+    /**
+        Here you can build your table pattern
+        so that when you run `php vesper db:build` or `db:refresh`
+        the tables will be made.
+    */
 
-$t->varchar('username',50)->unique();
-$t->varchar('password',65)->notnull();
-$t->varchar('salt',100)->notnull();
+    $t = new Tablier('{namespace}');
 
-$t->varchar('email',100)->notnull();
-$t->varchar('firstname',50)->notnull();
-$t->varchar('lastname',50);
-$t->varchar('country',20);
-$t->date('birthdate');
+    $t->int('id')->primary();
 
-$t->int('rolesid')->default(0)->foreign('roles');
+    $t->varchar('username',50)->unique();
+    $t->varchar('password',65)->notnull();
+    $t->varchar('salt',100)->notnull();
 
-$t->timestamp('created_at')->default();
-$t->timestamp('updated_at')->onupdate();
+    $t->varchar('email',100)->notnull();
+    $t->varchar('firstname',50)->notnull();
+    $t->varchar('lastname',50);
+    $t->varchar('country',20);
+    $t->date('birthdate');
 
-$t->build();
+    $t->int('rolesid')->default(0)->foreign('roles');
+
+    $t->timestamp('created_at')->default();
+    $t->timestamp('updated_at')->onupdate();
+
+    $t->build();
+
+}
+
+if($boot=="down"){
+
+    /**
+        When running `php vesper db:drop` this
+        part of the code will be executed.
+        caution: `php vesper db:destroy` will
+        wipe the entire database and is different
+        from `db:drop`. 
+    */
+
+    $t = new Tablier('{namespace}');
+    $t->drop();
+
+}
