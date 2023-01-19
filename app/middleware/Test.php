@@ -1,8 +1,14 @@
 <?php
 
-namespace Route;
+namespace Middleware;
+
+/** Armour middleware needs 'Middleware' as
+ * a namespace to access it in the route method.
+ */
 
 class Test{
+
+    public $inset = 1;
 
     public function pass($val){
 

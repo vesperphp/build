@@ -12,6 +12,22 @@ Route::register("user/edit/1", "UserController@edit")
         ->model("User",1)
         ->store("get");
 
+        Route::register("user/edit/2", "UserController@edit")
+        ->auth('true|false')
+        ->role('admin|user|array?')
+        ->armour("Test@stop", "value(optional)")
+        ->limit(86400, 1000, 'groupname')
+        ->model("User",1)
+        ->store("get");
+
+        Route::register("user/edit/3", "UserController@edit")
+        ->auth('true|false')
+        ->role('admin|user|array?')
+        ->armour("Test@stop", "value(optional)")
+        ->limit(86400, 1000, 'groupname')
+        ->model("User",1)
+        ->store("get");
+
         // the order of the middleware stack is of importance
         // this case will block users without a session first
         // if there is a session, check the role.. etc..
